@@ -1,5 +1,5 @@
 import express from "express";
-import { chatWithAgent } from "./agent";
+import { chatWithAgent } from "./agent.js";
 import cors from "cors";
 const app=express();
 

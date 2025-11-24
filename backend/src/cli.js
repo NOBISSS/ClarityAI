@@ -1,5 +1,5 @@
 import readline from "node:readline/promises";
-import { chatWithAgent } from "./agent";
+import { chatWithAgent } from "./agent.js";
 
 async function main(){
     const rl=readline.createInterface({
