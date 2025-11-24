@@ -1,6 +1,8 @@
 import { useEffect, useRef, useState } from "react";
 import { RiMoonLine, RiSunLine } from "react-icons/ri";
 import { IoMdSend } from "react-icons/io";
+
+const API_BASE=import.meta.env.VITE_API_BASE_URL || "";
 const THEMES = {
   dark: {
     name: "dark",
@@ -73,7 +75,7 @@ function App() {
     setLoading(true);
 
     try {
-      const res = await fetch("/api/chat", {
+      const res = await fetch(`${API_BASE}/api/chat`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ message: text, threadId }),
