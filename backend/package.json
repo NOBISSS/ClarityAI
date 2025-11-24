@@ -3,7 +3,7 @@
   "module": "index.js",
   "scripts": {
     "dev":"bun run src/server.js",
-    "start": "node run src/server.js",
+    "start": "node src/server.js",
     "dev:cli": "bun run src/cli.js",
     "dev:server": "bun run src/server.js"
   },
