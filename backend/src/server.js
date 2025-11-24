@@ -1,8 +1,9 @@
 import express from "express";
 import { chatWithAgent } from "./agent";
+import dotenv from "dotenv";
 import cors from "cors";
 const app=express();
-
+dotenv.config();
 app.use(
     cors({
         origin:"*",
@@ -32,6 +33,6 @@ app.post("/api/chat",async(req,res)=>{
 });
 
 const PORT=process.env.PORT || 3000;
-app.listen(PORT,()=>{
+app.listen(PORT,"0.0.0.0",()=>{
     console.log(`✅ Backend Server running at http://localhost:${PORT}`);
 });
