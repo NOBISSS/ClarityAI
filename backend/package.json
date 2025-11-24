@@ -2,7 +2,7 @@
   "name": "custom-agent",
   "module": "index.js",
   "scripts": {
-    "dev":"bun run src/server.js",
+    "dev": "bun run src/server.js",
     "start": "node src/server.js",
     "dev:cli": "bun run src/cli.js",
     "dev:server": "bun run src/server.js"
@@ -15,6 +15,7 @@
     "@langchain/langgraph": "^1.0.1",
     "@langchain/tavily": "^1.0.0",
     "cors": "^2.8.5",
+    "dotenv": "^16.6.1",
     "express": "^5.1.0",
     "langchain": "^1.0.1"
   }
